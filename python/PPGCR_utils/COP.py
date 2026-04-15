@@ -1,9 +1,7 @@
 import numpy as np
 from scipy import stats
 
-
-
-
+# test
 
 # computa area da elipese
 def computar_area_elipse_cop(ml, ap, p=0.95):
