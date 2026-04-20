@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: ppgcr-utils
+Version: 0.1.0
+Summary: Utilities for signal processing and data analysis in Python.
+Author: Conrado Torres
+License: MIT
+Project-URL: Homepage, https://github.com/SEU_USUARIO/PPGCR_utils
+Project-URL: Repository, https://github.com/SEU_USUARIO/PPGCR_utils
+Keywords: signal processing,EMG,COP,biomechanics,data analysis
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.24
+Requires-Dist: scipy>=1.10
+Requires-Dist: matplotlib>=3.7
