@@ -17,7 +17,7 @@ O pacote não esta disponivel no pipy. Instale localmente usando o modo editavel
 ```bash
 C:\Users\voce\anaconda3\shell\condabin\conda-hook.ps1
 conda activate base
-cd ./python/src
+cd ./python
 pip install -e .
 ```
 
