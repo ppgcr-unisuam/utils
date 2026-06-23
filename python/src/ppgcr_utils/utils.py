@@ -21,7 +21,7 @@ def resumo(x, numeric_summary='auto', digits=1):
             value = f"{cont.iloc[0]} ({100*cont.iloc[0]/n:.{digits}f}%)"
             return pd.DataFrame(
                 {'value': [value]},
-                index=[f"{nome}({mais_freq})"]
+                index=[f"{nome} ({mais_freq})"]
             )
         
         if not pd.api.types.is_numeric_dtype(s):
