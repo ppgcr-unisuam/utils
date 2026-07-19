@@ -5,6 +5,7 @@ Desenvolvido e mantido pelos colaboradores do programa de ciencias da reabilitac
 '''
 
 import pandas as pd
+import numpy as np
 from scipy import stats
 
 def resumo(x, numeric_summary='auto', digits=1):
@@ -55,3 +56,15 @@ def resumo(x, numeric_summary='auto', digits=1):
         return resumo_series(x)
     
     return pd.concat([resumo_series(x[col]) for col in x.columns])
+
+def media_movel(arr, janela=30):
+    
+    kernel = np.ones(janela) / janela
+    mov_avg = np.convolve(arr, kernel, 'valid')[:len(arr)]
+    # pass it backwardly
+    mov_avg = (np.convolve(mov_avg[::-1], kernel, 'valid')[:len(arr)])[::-1]
+    # insert side padding to equal input length
+    padding = int((len(arr)-len(mov_avg))/2)
+    mov_avg = np.concatenate([np.repeat(mov_avg[0],padding),mov_avg,np.repeat(mov_avg[-1],padding)])
+    
+    return mov_avg
