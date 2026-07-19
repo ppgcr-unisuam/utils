@@ -10,5 +10,6 @@ from .cop import *
 from .emg import *
 from .plotting import *
 from .utils import *
+from .imu import *
 
 __version__ = "0.1.0"
